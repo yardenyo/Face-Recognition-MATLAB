@@ -37,5 +37,37 @@ not-proper image:
 - lighting conditions is not good as expected.
 - **there is no face/face part in this specific picture.**
 
-## Features
-<img src="https://i.ibb.co/HtBFVTX/1.jpg" alt="1" width="200" height="200" data-is360="0" data-load="full" class="cursor-zoom-in" style="width: 200px; height: 200px; display: block;">
+## Algorithm
+in this algorithm we used matlab function called CascadeObjectDetector.
+this function is using Viola-Jones algorithm to identify full face/face parts in a picture or a video.
+using switch case we will be able to interactivly recognize the chosen element by creating FaceDetector object for each scenario (case).
+also, for each scenario we changed the Threshold value to match the specific face part to increase the algorithm accuracy.
+
+the output we will get using step by array of Bounding Box, this type of algorithm will generate rectangle on the chosen part to recognize,
+this rectangle wont affect the picture and wont hide the element in the picture.
+
+picture load - <br><br>
+<img data-src="https://gcdnb.pbrd.co/images/Afk5JTkhoiWc.png?o=1" data-load-src="https://pasteboard.co/images/Afk5JTkhoiWc.png/load" alt="uploaded image" class="image js" src="https://gcdnb.pbrd.co/images/Afk5JTkhoiWc.png?o=1">
+
+reading value - <br><br>
+<img data-src="https://gcdnb.pbrd.co/images/gyw5WpMYoQWN.png?o=1" data-load-src="https://pasteboard.co/images/gyw5WpMYoQWN.png/load" alt="uploaded image" class="image js" src="https://gcdnb.pbrd.co/images/gyw5WpMYoQWN.png?o=1">
+
+each scenario read the img, creting FaceDetector object, setting the rectangle and showing the part that was found - <br>
+(example for full face recognition)
+<br>
+<br>
+<img data-src="https://gcdnb.pbrd.co/images/LjNKtNTcITvN.png?o=1" data-load-src="https://pasteboard.co/images/LjNKtNTcITvN.png/load" alt="uploaded image" class="image js" src="https://gcdnb.pbrd.co/images/LjNKtNTcITvN.png?o=1">
+
+find out if there is face part or not - <br><br>
+<img data-src="https://gcdnb.pbrd.co/images/odBaVYOyHmso.png?o=1" data-load-src="https://pasteboard.co/images/odBaVYOyHmso.png/load" alt="uploaded image" class="image js" src="https://gcdnb.pbrd.co/images/odBaVYOyHmso.png?o=1">
+
+# Test-Run
+
+<img data-src="https://gcdnb.pbrd.co/images/Yb7ht1z642nt.png?o=1" data-load-src="https://pasteboard.co/images/Yb7ht1z642nt.png/load" alt="uploaded image" class="image js" src="https://gcdnb.pbrd.co/images/Yb7ht1z642nt.png?o=1">
+
+<img data-src="https://gcdnb.pbrd.co/images/Y6fi1FG5wgEP.png?o=1" data-load-src="https://pasteboard.co/images/Y6fi1FG5wgEP.png/load" alt="uploaded image" class="image js" src="https://gcdnb.pbrd.co/images/Y6fi1FG5wgEP.png?o=1">
+
+<img data-src="https://gcdnb.pbrd.co/images/XFkP0oqLNmhP.png?o=1" data-load-src="https://pasteboard.co/images/XFkP0oqLNmhP.png/load" alt="uploaded image" class="image js" src="https://gcdnb.pbrd.co/images/XFkP0oqLNmhP.png?o=1">
+
+<img data-src="https://gcdnb.pbrd.co/images/zJKxibUfmEdK.png?o=1" data-load-src="https://pasteboard.co/images/zJKxibUfmEdK.png/load" alt="uploaded image" class="image js" src="https://gcdnb.pbrd.co/images/zJKxibUfmEdK.png?o=1">
+
